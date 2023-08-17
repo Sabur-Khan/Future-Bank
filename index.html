@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Bank.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="user-background">
+        <img src="images/bank _bg.jpg" alt="" srcset="">
+        <div class="login-body">
+            <h2>Welcome to My Future Bank</h2>
+            <div class="form-body">
+
+                <!-- user input -->
+                <div class="input-box">
+                    <i class="fa-solid fa-user" style="color: #ffffff;"></i> &nbsp;
+                    <label for="">Your Email</label><br>
+                    <input class="user-input" type="text" placeholder="Enter Your Email"> <br>
+                    <span class="error-one"></span>
+                </div>
+
+                <!-- password input -->
+                <div class="password-box">
+                    <i class="fa-solid fa-lock" style="color: #ffffff;"></i> &nbsp;
+                    <label for="">Password</label><br>
+                    <input class="user-password" type="password" placeholder="Enter password"><br>
+                    <span class="error-two"></span>
+                </div>
+
+                <!-- login btn -->
+                <div class="login">
+                    <button class="login-btn">Login</button>
+                    <h5>Forget password ?</h5>
+                    <h6>Don’t have account? <a href="#">Create Account</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bank-body">
+        <div class="top-box">
+            <div class="deposite-box">
+                <h4>Deposite</h4>
+                <span>$<span id="deposite-amount-number">00</span>
+            </div>
+            <div class="withdraw-box">
+                <h4>Withdraw</h4>
+                <span>$<span id="withdraw-amount-number">00</span></span>
+            </div>
+            <div class="balance-box">
+                <h4>Balance</h4>
+                <span>$<span id="blance-amount-number">00</span> </span>
+                
+            </div>
+        </div>
+        <div class="bottom-box">
+
+            <div class="firt-deposite-box">
+                <h3>Please Deposite</h3>
+                <input id="user-deposite-input" type="text" placeholder="Please Deposite"> <br>
+                <small class="deposite-error"></small> <br>
+                <button id="deposite-btn">Deposite</button>
+            </div>
+
+            <div class="second-withdraw-box">
+                <h3>Please Withdraw</h3>
+                <input id="user-withdraw-input" type="text" placeholder="Please Withdraw"> <br>
+                <small class="deposite-errors"></small> <br>
+                <button id="withdraw-btn">Withdraw</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

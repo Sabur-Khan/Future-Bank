@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+body{
+	background-color: #002237;
+}
+/*=================user style start===================*/
+.user-background {
+	width: 50%;
+	height: 600px;
+	overflow: hidden;
+	margin: 50px auto;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	position: relative;
+}
+.user-background img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: inherit;
+    filter: blur(5px);
+}
+.login-body {
+	width: 60%;
+	height: 433px;
+	position: absolute;
+	top: 10%;
+	margin: 0 auto;
+	left: 20%;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.1) 100%);
+	border-radius: 11px;
+	padding: 20px 20px;
+	backdrop-filter: blur(4px);
+}
+.login-body h2 {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+    font-weight: 700;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+	padding-bottom: 10px;
+}
+.login-body h2::after {
+	content: '';
+	bottom: 0;
+	left: 11%;
+	width: 342px;
+	height: 2px;
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+}
+.form-body{
+    margin-top: 40px;
+}
+.input-box label {
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	font-family: 'Roboto Mono', monospace;
+}
+.input-box .user-input{
+    width: 355px;
+    height: 40px;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid #fffefe4e;
+
+}
+.password-box{
+    margin-top: 30px;
+}
+.password-box label{
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	font-family: 'Roboto Mono', monospace;
+}
+.password-box .user-password {
+	width: 355px;
+	height: 40px;
+	outline: none;
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 0px 10px;
+	border-radius: 4px;
+	margin-top: 5px;
+	font-family: 'Roboto Mono', monospace;
+    border: 1px solid #fffefe4e;
+}
+.login{
+    text-align: center;
+}
+.login h5{
+	color: #000;
+	font-size: 13px;
+	margin-top: 10px;
+	font-weight: 700;
+	font-family: 'Roboto Mono', monospace;
+	border-top: 1px solid #fff;
+    padding-top: 5px;
+    text-align: center;
+}
+.login h6{
+    color: #fff;
+    font-size: 13px;
+    margin-top: 7px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 5px;
+}
+.form-body .login-btn {
+	margin-top: 30px;
+	padding: 5px 20px;
+	background: transparent;
+	color: white;
+	font-size: 21px;
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+	border: 2px solid #fffbfbe5;
+    cursor: pointer;
+}
+.form-body .login-btn:hover{
+	background-color: rgba(0, 255, 255, 0.361);
+    color: rgb(255, 255, 255);
+    transition: all linear.3s;
+}
+
+/* bank design top box */
+.bank-body{
+	width: 75%;
+	overflow: hidden;
+	margin: 50px auto;
+	padding: 20px 20px;
+	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background-color: #ffffff;
+    display: none;
+}
+.top-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-box .deposite-box{
+	width: 350px;
+	height: 120px;
+	border-radius: 4px;
+	padding: 10px 10px;
+	background-color:  #93C5FD;
+	text-align: center;
+}
+.top-box .deposite-box h4{
+	padding-bottom: 15px;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+}
+.top-box .deposite-box span{
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+}
+.top-box .withdraw-box{
+	width: 350px;
+	height: 120px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 10px 10px;
+	background-color:#6EE7B7;
+}
+.top-box .withdraw-box h4{
+	padding-bottom: 15px;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+}
+.top-box .withdraw-box span{
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+}
+.top-box .balance-box{
+	width: 350px;
+	height: 120px;
+	border-radius: 4px;
+	padding: 10px 10px;
+	text-align: center;
+	background-color: #FCD34D;
+}
+.top-box .balance-box h4{
+	padding-bottom: 15px;
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+}
+.top-box .balance-box span{
+	font-size: 26px;
+	color: rgb(255, 255, 255);
+	font-weight: 500;
+	font-family: 'Roboto Mono', monospace;
+}
+
+/* bank design bottom box */
+.bottom-box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
+}
+.bottom-box .firt-deposite-box {
+	width: 46%;
+	height: 250px;
+	padding: 27px 32px;
+	background-color: #FEE2E2;
+}
+.bottom-box .firt-deposite-box > button {
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+	background: #D97706;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.bottom-box .firt-deposite-box h3{
+	font-size: 29px;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	font-family: 'Roboto Mono', monospace;
+	margin: 0px 0px 24px 0px;
+}
+.bottom-box .firt-deposite-box input {
+	width: 260px;
+	height: 41px;
+	padding: 0px 4px 0px 10px;
+	font-size: 16px;
+	font-weight: 400;
+	outline: none;
+	font-family: 'Roboto Mono', monospace;
+}
+.bottom-box .second-withdraw-box{
+	width: 46%;
+	height: 250px;
+	padding: 27px 32px;
+	background-color: #EDE9FE;
+}
+.bottom-box .second-withdraw-box input{
+	width: 260px;
+	height: 41px;
+	padding: 0px 4px 0px 10px;
+	font-size: 16px;
+	font-weight: 400;
+	outline: none;
+	font-family: 'Roboto Mono', monospace;
+}
+.bottom-box .second-withdraw-box > button{
+	width: 130px;
+	height: 50px;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+	background: #D97706;
+	border: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.bottom-box .second-withdraw-box h3{
+	font-size: 29px;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	font-family: 'Roboto Mono', monospace;
+	margin: 0px 0px 24px 0px;
+}
+
+@media (max-width: 576px) { 
+	.user-background {
+		width: 100%;
+	}
+	.login-body {
+		width: 100%;
+		height: 481px;
+		left: 0;
+	}.login-body h2 {
+		font-size: 18px;
+	}
+	.login-body h2::after {
+		left: 0;
+		width: 100%;
+	}
+	.input-box .user-input {
+		width: 100%;
+	}
+	.password-box .user-password {
+		width: 100%;
+	}
+
+
+	.bank-body {
+		width: 100%;
+	}
+	.top-box {
+		flex-direction: column;
+	}
+	.top-box .deposite-box {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.top-box .withdraw-box {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.top-box .balance-box {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.bottom-box {
+		margin-top: 48px;
+		flex-direction: column;
+	}
+	.bottom-box .firt-deposite-box {
+		width: 100%;
+		height: 237px;
+		padding: 17px 17px;
+		margin-bottom: 30px;
+	}
+	.bottom-box .second-withdraw-box {
+		width: 100%;
+		height: 237px;
+		padding: 17px 17px;
+		margin-bottom: 30px;
+	}
+	.bottom-box .firt-deposite-box h3 {
+		font-size: 24px;
+	}
+	.bottom-box .second-withdraw-box h3 {
+		font-size: 24px;
+	}
+	.bottom-box .firt-deposite-box input {
+		width: 100%;
+	}
+	.bottom-box .second-withdraw-box input {
+		width: 100%;
+	}
+}
